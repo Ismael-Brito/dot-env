@@ -11,7 +11,7 @@ Este pacote permite carregar variáveis de ambiente a partir de um arquivo `.env
 Via [Composer](https://getcomposer.org):
 
 ```bash
-composer require ismaelbrito/meu-dotenv
+composer require ismaelbrito/dot-env
 
 ```
 
