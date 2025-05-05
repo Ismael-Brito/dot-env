@@ -15,6 +15,35 @@ composer require ismaelbrito/meu-dotenv
 
 ```
 
+## Como Usar
+
+O uso da library e simples, primeiro crie um arquivo `.env` na raiz do seu projeto, seguindo o modelo abaixo (uma variável por linha):
+
+```
+DB_HOST=localhost
+DB_USER=root
+DB_PASS=pass
+```
+
+```php
+<?php
+
+require 'vendor/autoload.php';
+
+//CARREGAR VARIAVEIS DE AMBIENTE DO ARQUIVO NA RAIZ
+ismaelbrito\DotEnv\Environment::load(__DIR__);
+
+//OBTENHA VARIÁVEL DE AMBIENTE
+echo getenv('DB_HOST');
+
+```
+
+## Requisitos
+
+Esta biblioteca requer PHP 7.0 ou superior.
+
+---
+
 # PHP Environment Variables Manager INGLÊS
 
 A simple library for managing environment variables in PHP.
