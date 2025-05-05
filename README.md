@@ -31,7 +31,7 @@ DB_PASS=pass
 require 'vendor/autoload.php';
 
 //CARREGAR VARIAVEIS DE AMBIENTE DO ARQUIVO NA RAIZ
-ismaelbrito\DotEnv\Environment::load(__DIR__);
+IsmaelBrito\DotEnv\Environment::load(__DIR__);
 
 //OBTENHA VARIÁVEL DE AMBIENTE
 echo getenv('DB_HOST');
