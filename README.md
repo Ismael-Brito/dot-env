@@ -64,7 +64,7 @@ DB_PASS=pass
 require 'vendor/autoload.php';
 
 //LOAD ENVIRONMENT VARS FROM FILE ON ROOT
-ismaelbrito\DotEnv\Environment::load(__DIR__);
+IsmaelBrito\DotEnv\Environment::load(__DIR__);
 
 //GET ENVIRONMENT VAR
 echo getenv('DB_HOST');
